@@ -1,0 +1,12 @@
+FROM kubernetes:v1.19.8
+COPY openebs-operator.yaml etc/
+COPY cstor-operator.yaml etc/
+COPY crd.yaml etc/
+COPY operator.yaml etc/
+COPY obcluster.yaml etc/
+COPY imageList manifests
+CMD kubectl apply -f etc/openebs-operator.yaml
+CMD kubectl apply -f etc/cstor-operator.yaml
+CMD kubectl apply -f etc/crd.yaml
+CMD kubectl apply -f etc/operator.yaml
+CMD kubectl apply -f etc/obcluster.yaml

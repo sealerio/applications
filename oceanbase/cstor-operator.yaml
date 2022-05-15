@@ -1757,7 +1757,7 @@ spec:
                         additionalProperties:
                           type: string
                         description: NodeSelector is the labels that will be used
-                          to select a node for target pod scheduleing Required field
+                          to select a node for target pod scheduling Required field
                         type: object
                       priorityClassName:
                         description: PriorityClassName if specified applies to this
@@ -2309,7 +2309,7 @@ spec:
                     additionalProperties:
                       type: string
                     description: NodeSelector is the labels that will be used to select
-                      a node for target pod scheduleing Required field
+                      a node for target pod scheduling Required field
                     type: object
                   priorityClassName:
                     description: PriorityClassName if specified applies to this target

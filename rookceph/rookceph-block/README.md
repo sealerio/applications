@@ -21,7 +21,7 @@ CephBlockPool:
 
 Use default Clusterfile to apply the ceph cluster.
 
-see : [default ceph block Clusterfile examples](../../../applications/rookceph/rookceph-block/examples/Clusterfile.yaml)
+see : [default ceph block Clusterfile examples](../../../applications/blob/main/rookceph/rookceph-block/examples/Clusterfile.yaml)
 
 ## How to use it
 
@@ -99,7 +99,7 @@ Once the rook-ceph-tools pod is running, you can connect to it with:
 
 Use ceph as the block storage backend to deploy mysql application.
 
-see: [mysql with ceph block examples](../../../applications/rookceph/rookceph-block/examples/examples.yaml)
+see: [mysql with ceph block examples](../../../applications/blob/main/rookceph/rookceph-block/examples/examples.yaml)
 
 ## How to rebuild it
 

@@ -1074,7 +1074,7 @@ spec:
       serviceAccount: openebs-cstor-csi-controller-sa
       containers:
         - name: csi-resizer
-          image: k8s.gcr.io/sig-storage/csi-resizer:v1.1.0
+          image: registry.k8s.io/sig-storage/csi-resizer:v1.1.0
           args:
             - "--v=5"
             - "--csi-address=$(ADDRESS)"
@@ -1087,7 +1087,7 @@ spec:
             - name: socket-dir
               mountPath: /var/lib/csi/sockets/pluginproxy/
         - name: csi-snapshotter
-          image: k8s.gcr.io/sig-storage/csi-snapshotter:v3.0.3
+          image: registry.k8s.io/sig-storage/csi-snapshotter:v3.0.3
           args:
             - "--csi-address=$(ADDRESS)"
           env:
@@ -1098,13 +1098,13 @@ spec:
             - name: socket-dir
               mountPath: /var/lib/csi/sockets/pluginproxy/
         - name: snapshot-controller
-          image: k8s.gcr.io/sig-storage/snapshot-controller:v3.0.3
+          image: registry.k8s.io/sig-storage/snapshot-controller:v3.0.3
           args:
             - "--v=5"
             - "--leader-election=false"
           imagePullPolicy: IfNotPresent
         - name: csi-provisioner
-          image: k8s.gcr.io/sig-storage/csi-provisioner:v2.1.0
+          image: registry.k8s.io/sig-storage/csi-provisioner:v2.1.0
           imagePullPolicy: IfNotPresent
           args:
             - "--csi-address=$(ADDRESS)"
@@ -1125,7 +1125,7 @@ spec:
             - name: socket-dir
               mountPath: /var/lib/csi/sockets/pluginproxy/
         - name: csi-attacher
-          image: k8s.gcr.io/sig-storage/csi-attacher:v3.1.0
+          image: registry.k8s.io/sig-storage/csi-attacher:v3.1.0
           imagePullPolicy: IfNotPresent
           args:
             - "--v=5"
@@ -1332,7 +1332,7 @@ spec:
       hostNetwork: true
       containers:
         - name: csi-node-driver-registrar
-          image: k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.1.0
+          image: registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.1.0
           imagePullPolicy: IfNotPresent
           args:
             - "--v=5"

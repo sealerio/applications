@@ -23,7 +23,7 @@ CephObjectStore:
 
 Use default Clusterfile to apply the ceph cluster.
 
-see : [default ceph object store Clusterfile examples](../../../applications/rookceph/rookceph-object/examples/Clusterfile.yaml)
+see : [default ceph object store Clusterfile examples](./examples/Clusterfile.yaml)
 
 ## How to use it
 
@@ -168,4 +168,4 @@ Modify manifest.yaml or cephobject.yaml file according to your needs, then run b
 sealer build -t {Your Image Name} -f Kubefile -m cloud .
 ```
 
-More parameters see [official docs here](https://rook.io/docs/rook/v1.7/ceph-object.html).
+More parameters see [official docs here](https://github.com/rook/rook).

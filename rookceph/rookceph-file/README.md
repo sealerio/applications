@@ -24,7 +24,7 @@ CephFilesystem:
 
 Use default Clusterfile to apply the ceph cluster.
 
-see : [default ceph filesystem Clusterfile examples](../../../applications/rookceph/rookceph-file/examples/Clusterfile.yaml)
+see : [default ceph filesystem Clusterfile examples](./examples/Clusterfile.yaml)
 
 ## How to use it
 
@@ -102,7 +102,7 @@ Once the rook-ceph-tools pod is running, you can connect to it with:
 
 Use ceph as the filesystem storage backend to deploy docker registry application.
 
-see : [docker registry with ceph filesystem examples](../../../applications/rookceph/rookceph-file/examples/examples.yaml)
+see : [docker registry with ceph filesystem examples](./examples/examples.yaml)
 
 ## How to rebuild it
 
@@ -112,4 +112,4 @@ Modify manifest.yaml or cephfilesystem.yaml file according to your needs, then r
 sealer build -t {Your Image Name} -f Kubefile -m cloud .
 ```
 
-More parameters see [official docs here](https://rook.io/docs/rook/v1.7/ceph-filesystem.html).
+More parameters see [official docs here](https://github.com/rook/rook).

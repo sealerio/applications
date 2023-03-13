@@ -79,4 +79,4 @@ run below command to build it
 sealer build -t {Your Image Name} -f Kubefile -m cloud .
 ```
 
-More parameters see [official document here](https://longhorn.io/docs/1.2.3/).
+More parameters see [official document here](https://longhorn.io/docs).

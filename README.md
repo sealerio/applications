@@ -19,17 +19,13 @@ ClusterImage. While it still has challenge for user to get satisfied and detaile
 ClusterImage, such as MySQL, ElasticSearch and so on. Here is the procedure that
 user could follow when searching some spefific ClusterImage:
 
-* Step 1: use `sealer search <APP_NAME>` command to search application
-<APP_NAME> from remote registry;
-* Step 2: if step 1 fails, come to this `applications` repo to search whether
-<APP_NAME> application exists here;
-* Step 3: if step 2 fails either, please file an issue in this repository,
-describe detailed demand and the community may provide help.
+* Step 1: use `sealer search <APP_NAME>` command to search application <APP_NAME> from remote registry;
+* Step 2: if step 1 fails, come to this `applications` repo to search whether <APP_NAME> application exists here;
+* Step 3: if step 2 fails either, please file an issue in this repository, describe detailed demand and the community may provide help.
 
 ### Apply a cluster
 
-You can modify the image name and save it as "clusterfile.yaml", then execute
-cmd `sealer apply -f clusterfile.yaml`.
+You can modify the image name and save it as "clusterfile.yaml", then execute cmd `sealer apply -f clusterfile.yaml`.
 
 ```yaml
 apiVersion: sealer.cloud/v2
@@ -58,13 +54,7 @@ spec:
     user: root
 ```
 
-If you want to apply a ClusterImage which needs persistence storage. We provide openebs as cloud storage backend. OpenEBS
-provides block volume support through the iSCSI protocol. Therefore, the iSCSI client (initiator) presence on all
-Kubernetes nodes is required. Choose the platform below to find the steps to verify if the iSCSI client is installed and
-running or to find the steps to install the iSCSI client.For openebs, different storage engine need to config different
-prerequisite. more to see [openebs website](https://openebs.io).
-
-We provide plugin mechanism, you only need to append below example to "clusterfile.yaml" and apply them together.
+If you want to apply a ClusterImage which needs persistence storage. We provide openebs as cloud storage backend. OpenEBS provides block volume support through the iSCSI protocol. Therefore, the iSCSI client (initiator) presence on all Kubernetes nodes is required. Choose the platform below to find the steps to verify if the iSCSI client is installed and running or to find the steps to install the iSCSI client.For openebs, different storage engine need to config different prerequisite. more to see [openebs website](https://github.com/openebs/openebs). We provide plugin mechanism, you only need to append below example to "clusterfile.yaml" and apply them together.
 
 For example, if we use jiva engine as storage backend :
 
